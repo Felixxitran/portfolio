@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Data Mining/Filtering" ];
+  const toRotate = [ "Engineer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hello! I'm Felix Tran `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Data Mining/Filtering" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hello! I'm Felix Tran Software `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Data Mining/Filtering" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Second-year computer science student, future software developer. My passion with applications development brought me to University of British Columbia where I am working on my Bachelor of Sciene. 
 
 </p>
